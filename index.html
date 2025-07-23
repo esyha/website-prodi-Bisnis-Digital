@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Universitas Kurnia Jaya Persada - Prodi Bisnis Digital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#004D43",
+              secondary: "#FFD700",
+              accent: "#355F2E",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .hero-section {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("img/WhatsApp\ Image\ 2025-07-21\ at\ 20.10.59_a8be0059\ \(1\).jpg");
+        background-size: cover;
+        background-position: center;
+      }
+
+      .news-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .testimonial-card {
+        transition: all 0.3s ease;
+      }
+
+      .testimonial-card:hover {
+        transform: scale(1.03);
+      }
+
+      @media (max-width: 768px) {
+        .mobile-menu {
+          display: none;
+        }
+
+        .mobile-menu.active {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body class="font-sans bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+      <div
+        class="container mx-auto px-4 py-3 flex justify-between items-center"
+      >
+        <div class="flex items-center space-x-4">
+          <img src="img/LOGO UNIVERSITAS.png" alt="Logo UKJP" class="h-20" />
+          <div>
+            <h1 class="text-xl font-bold text-primary">
+              UNIVERSITAS KURNIA JAYA PERSADA
+            </h1>
+            <p class="text-sm text-gray-600">
+              Bermutu, Berkarakter, Berwawan Global
+            </p>
+          </div>
+        </div>
+
+        <div class="hidden md:flex space-x-6">
+          <a href="#" class="font-medium text-primary hover:text-accent"
+            >Beranda</a
+          >
+          <a href="#" class="font-medium text-gray-600 hover:text-primary"
+            >Tentang Prodi</a
+          >
+          <a href="#" class="font-medium text-gray-600 hover:text-primary"
+            >Kurikulum</a
+          >
+          <a href="#" class="font-medium text-gray-600 hover:text-primary"
+            >Berita</a
+          >
+          <a href="#" class="font-medium text-gray-600 hover:text-primary"
+            >Prestasi</a
+          >
+          <a href="#" class="font-medium text-gray-600 hover:text-primary"
+            >Pendaftaran</a
+          >
+          <a href="#" class="font-medium text-gray-600 hover:text-primary"
+            >Kontak</a
+          >
+        </div>
+
+        <button id="mobile-menu-button" class="md:hidden text-primary text-2xl">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="mobile-menu md:hidden bg-white border-t">
+        <div class="container mx-auto px-4 py-2 flex flex-col space-y-2">
+          <a href="#" class="py-2 font-medium text-primary">Beranda</a>
+          <a href="#" class="py-2 font-medium text-gray-600">Tentang Prodi</a>
+          <a href="#" class="py-2 font-medium text-gray-600">Kurikulum</a>
+          <a href="#" class="py-2 font-medium text-gray-600">Berita</a>
+          <a href="#" class="py-2 font-medium text-gray-600">Prestasi</a>
+          <a href="#" class="py-2 font-medium text-gray-600">Pendaftaran</a>
+          <a href="#" class="py-2 font-medium text-gray-600">Kontak</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-white py-20 md:py-32">
+      <div class="container mx-auto px-4 text-center">
+        <h1 class="text-3xl md:text-5xl font-bold mb-6">
+          Mencetak Generasi Digital yang Siap Bersaing Global
+        </h1>
+        <p class="text-xl mb-8 max-w-2xl mx-auto">
+          Program Studi Bisnis Digital Universitas Kurnia Jaya Persada membekali
+          mahasiswa dengan kompetensi bisnis dan teknologi untuk sukses di era
+          digital.
+        </p>
+        <a
+          href="#pendaftaran"
+          class="bg-secondary hover:bg-yellow-600 text-primary font-bold py-3 px-8 rounded-full text-lg transition duration-300 inline-block"
+          >Daftar Sekarang</a
+        >
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-primary mb-4">
+            Tentang Program Studi Bisnis Digital
+          </h2>
+          <div class="w-24 h-1 bg-secondary mx-auto"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <img
+              src="img/gambar kampus.jpg"
+              alt="Mahasiswa Bisnis Digital"
+              class="rounded-lg shadow-lg"
+            />
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-accent mb-4">
+              Prodi Unggulan di Era Digital
+            </h3>
+            <p class="text-gray-700 mb-4">
+              Program Studi Bisnis Digital Universitas Kurnia Jaya Persada
+              dirancang khusus untuk memenuhi kebutuhan industri di era
+              transformasi digital dengan pendekatan pembelajaran yang inovatif.
+            </p>
+
+            <div class="space-y-4">
+              <div class="flex items-start">
+                <div class="bg-primary text-white p-2 rounded-full mr-4">
+                  <i class="fas fa-check"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-800">Kampus Modern</h4>
+                  <p class="text-gray-600">
+                    Fasilitas lengkap dengan teknologi terkini untuk mendukung
+                    pembelajaran.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="bg-primary text-white p-2 rounded-full mr-4">
+                  <i class="fas fa-check"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-800">
+                    Kurikulum Diktisaintek
+                  </h4>
+                  <p class="text-gray-600">
+                    Kurikulum berbasis kompetensi yang mengintegrasikan bisnis
+                    dan teknologi.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="bg-primary text-white p-2 rounded-full mr-4">
+                  <i class="fas fa-check"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-800">
+                    Pembelajaran Berbasis Proyek
+                  </h4>
+                  <p class="text-gray-600">
+                    Mahasiswa belajar melalui proyek nyata untuk mengasah
+                    keterampilan praktis.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Focus Areas -->
+    <section class="py-16 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-primary mb-4">
+            Fokus Pembelajaran
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Kami membekali mahasiswa dengan kompetensi inti di bidang bisnis
+            digital
+          </p>
+          <div class="w-24 h-1 bg-secondary mx-auto mt-4"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div
+            class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition duration-300"
+          >
+            <div
+              class="bg-primary text-white p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4"
+            >
+              <i class="fas fa-bullhorn text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-accent mb-2">
+              Digital Marketing
+            </h3>
+            <p class="text-gray-600">
+              Strategi pemasaran digital, SEO, media sosial, content marketing,
+              dan analisis performa.
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition duration-300"
+          >
+            <div
+              class="bg-primary text-white p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4"
+            >
+              <i class="fas fa-chart-line text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-accent mb-2">Data Analytics</h3>
+            <p class="text-gray-600">
+              Analisis data bisnis, visualisasi data, dan pengambilan keputusan
+              berbasis data.
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition duration-300"
+          >
+            <div
+              class="bg-primary text-white p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4"
+            >
+              <i class="fas fa-shopping-cart text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-accent mb-2">E-Commerce</h3>
+            <p class="text-gray-600">
+              Pengembangan platform e-commerce, manajemen toko online, dan
+              strategi penjualan digital.
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition duration-300"
+          >
+            <div
+              class="bg-primary text-white p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4"
+            >
+              <i class="fas fa-chess text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-accent mb-2">Strategi Bisnis</h3>
+            <p class="text-gray-600">
+              Perencanaan bisnis digital, model bisnis inovatif, dan manajemen
+              bisnis online.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-primary mb-4">
+            Berita & Informasi Terkini
+          </h2>
+          <p class="text-gray-600">
+            Update terbaru dari lingkungan Prodi Bisnis Digital
+          </p>
+          <div class="w-24 h-1 bg-secondary mx-auto mt-4"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="news-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300"
+          >
+            <img
+              src="img/Hadiri The 6th Joint Working Group 2025UKJP Buka Peluang Kolaborasi Kampus Luar NegeriRektor Un.jpg"
+              alt="Berita 1"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <div class="text-xs text-gray-500 mb-2">10 Juli 2025</div>
+              <h3 class="text-xl font-bold text-accent mb-3">
+                Buka Peluang Kolaborasi Kampus Luar Negeri
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Rektor Universitas Kurnia Jaya Persada (UKJP), Prof. drg.
+                Mansjur Nasir, Ph.D, Sp.Ort menghadiri The 6th Joint Working
+                Group 2025, di Unhas Hotel Convention, Universitas Hasanuddin,
+                Makassar, Kamis(10/7).
+              </p>
+              <a href="#" class="text-primary font-medium hover:text-accent"
+                >Baca Selengkapnya →</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="news-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300"
+          >
+            <img
+              src="img/kerja sama.jpg"
+              alt="Berita 2"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <div class="text-xs text-gray-500 mb-2">28 Mei 2025</div>
+              <h3 class="text-xl font-bold text-accent mb-3">
+                Jajaki Peluang Kolaborasi Akademik Global
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Rektor UKJP, Prof. drg. Mansjur Nasir, Ph.D., Sp.Ort baru-baru
+                ini melakukan audiensi penting dengan Kepala Kantor Konsuler
+                Jepang, Ohashi Koichi, di Makassar, pada Rabu (28/5).
+              </p>
+              <a href="#" class="text-primary font-medium hover:text-accent"
+                >Baca Selengkapnya →</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="news-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300"
+          >
+            <img
+              src="img/UKJP News – Universitas Kurnia Jaya Persada (UKJP) Palopo menerima kunjungan dari STIKES Panrit (1).jpg"
+              alt="Berita 3"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <div class="text-xs text-gray-500 mb-2">2 Mei 2025</div>
+              <h3 class="text-xl font-bold text-accent mb-3">
+                Gandeng UKJP Majukan Pendidikan
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Kunjungan ini dipimpin langsung oleh Ketua Yayasan STIKES
+                Panrita Husada sebagai bagian dari studi banding antar perguruan
+                tinggi guna memperkuat jejaring akademik dan kelembagaan.
+              </p>
+              <a href="#" class="text-primary font-medium hover:text-accent"
+                >Baca Selengkapnya →</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-10">
+          <a
+            href="#"
+            class="inline-block border-2 border-primary text-primary font-bold py-2 px-6 rounded-full hover:bg-primary hover:text-white transition duration-300"
+            >Lihat Semua Berita</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements -->
+    <section class="py-16 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-primary mb-4">
+            Prestasi Mahasiswa & Dosen
+          </h2>
+          <p class="text-gray-600">
+            Bukti nyata kualitas pendidikan di Prodi Bisnis Digital UKJP
+          </p>
+          <div class="w-24 h-1 bg-secondary mx-auto mt-4"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="flex items-center mb-4">
+              <div class="bg-primary text-white p-3 rounded-full mr-4">
+                <i class="fas fa-trophy"></i>
+              </div>
+              <h3 class="text-xl font-bold text-accent">
+                Dosen UKJP Lolos Pendanaan Hibah
+              </h3>
+            </div>
+            <p class="text-gray-600">
+              Suatu kebanggaan! Dosen kami berhasil meraih pendanaan Program
+              Penelitian dan Pengabdian DRTPM KEMDIKTISAINTEK 2025.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="flex items-center mb-4">
+              <div class="bg-primary text-white p-3 rounded-full mr-4">
+                <i class="fas fa-medal"></i>
+              </div>
+              <h3 class="text-xl font-bold text-accent">
+                Mahasiswa UKJP Juara Duta Pariwisata Palopo
+              </h3>
+            </div>
+            <p class="text-gray-600">
+              Dosen Prodi Bisnis Digital berhasil mempublikasikan penelitian
+              tentang strategi digital marketing di jurnal internasional
+              bereputasi.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="flex items-center mb-4">
+              <div class="bg-primary text-white p-3 rounded-full mr-4">
+                <i class="fas fa-award"></i>
+              </div>
+              <h3 class="text-xl font-bold text-accent">
+                Startup Mahasiswa Raih Pendanaan
+              </h3>
+            </div>
+            <p class="text-gray-600">
+              Startup digital yang dikembangkan mahasiswa kami berhasil
+              mendapatkan pendanaan seed round dari investor ternama.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-primary mb-4">Apa Kata Mereka?</h2>
+          <p class="text-gray-600">
+            Testimoni dari mahasiswa dan alumni Prodi Bisnis Digital
+          </p>
+          <div class="w-24 h-1 bg-secondary mx-auto mt-4"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="testimonial-card bg-gray-100 p-6 rounded-lg">
+            <div class="flex items-center mb-4">
+              <img
+                src="img/esyha.jpg"
+                alt="Testimoni 1"
+                class="w-12 h-12 rounded-full mr-4"
+              />
+              <div>
+                <h4 class="font-bold text-accent">Esyha Destika</h4>
+                <p class="text-sm text-gray-500">Mahasiswa Semester 4</p>
+              </div>
+            </div>
+            <p class="text-gray-700 italic">
+              "Pembelajaran berbasis proyek di Bisnis Digital UKJP sangat
+              membantu saya memahami aplikasi nyata teori bisnis digital. Saya
+              sudah bisa membuat website sendiri dan membuat cv berbasis
+              website."
+            </p>
+            <div class="mt-4 text-secondary">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+
+          <div class="testimonial-card bg-gray-100 p-6 rounded-lg">
+            <div class="flex items-center mb-4">
+              <img
+                src="https://randomuser.me/api/portraits/men/32.jpg"
+                alt="Testimoni 2"
+                class="w-12 h-12 rounded-full mr-4"
+              />
+              <div>
+                <h4 class="font-bold text-accent">Budi Santoso</h4>
+                <p class="text-sm text-gray-500">
+                  Alumni 2021, Digital Marketer
+                </p>
+              </div>
+            </div>
+            <p class="text-gray-700 italic">
+              "Kurikulum yang up-to-date dengan perkembangan industri membuat
+              saya mudah beradaptasi di dunia kerja. Sekarang saya bekerja
+              sebagai digital marketer di perusahaan e-commerce ternama."
+            </p>
+            <div class="mt-4 text-secondary">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+
+          <div class="testimonial-card bg-gray-100 p-6 rounded-lg">
+            <div class="flex items-center mb-4">
+              <img
+                src="https://randomuser.me/api/portraits/women/65.jpg"
+                alt="Testimoni 3"
+                class="w-12 h-12 rounded-full mr-4"
+              />
+              <div>
+                <h4 class="font-bold text-accent">Dewi Anggraeni</h4>
+                <p class="text-sm text-gray-500">
+                  Alumni 2020, Founder Startup
+                </p>
+              </div>
+            </div>
+            <p class="text-gray-700 italic">
+              "Dukungan dosen dan fasilitas di UKJP sangat membantu saya
+              mengembangkan startup. Sekarang bisnis digital saya sudah memiliki
+              15 karyawan dan terus berkembang."
+            </p>
+            <div class="mt-4 text-secondary">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section id="pendaftaran" class="py-16 bg-primary text-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold mb-4">Pendaftaran Mahasiswa Baru</h2>
+            <p class="text-gray-200">
+              Bergabunglah dengan Program Studi Bisnis Digital UKJP dan raih
+              kesuksesan di era digital
+            </p>
+            <div class="w-24 h-1 bg-secondary mx-auto mt-4"></div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-xl overflow-hidden">
+            <div class="md:flex">
+              <div class="md:w-1/2 bg-accent p-8 text-white">
+                <h3 class="text-2xl font-bold mb-4">Informasi Pendaftaran</h3>
+                <ul class="space-y-4">
+                  <li class="flex items-start">
+                    <div
+                      class="bg-secondary text-primary p-1 rounded-full mr-3"
+                    >
+                      <i class="fas fa-check text-xs"></i>
+                    </div>
+                    <span>Gelombang 3: 1 Juli - 31 Agustus 2025</span>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="bg-secondary text-primary p-1 rounded-full mr-3"
+                    >
+                      <i class="fas fa-check text-xs"></i>
+                    </div>
+                    <span>Gelombang 4: 1 September - 30 September 2025</span>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="bg-secondary text-primary p-1 rounded-full mr-3"
+                    >
+                      <i class="fas fa-check text-xs"></i>
+                    </div>
+                    <span
+                      >Persyaratan: Fotokopi ijazah, SKHUN, pas foto, dan
+                      KTP</span
+                    >
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="bg-secondary text-primary p-1 rounded-full mr-3"
+                    >
+                      <i class="fas fa-check text-xs"></i>
+                    </div>
+                    <span>Biaya pendaftaran: Rp 500.000</span>
+                  </li>
+                </ul>
+
+                <div class="mt-8">
+                  <h4 class="font-bold mb-2">Butuh Bantuan?</h4>
+                  <p class="mb-2">
+                    <i class="fas fa-phone mr-2"></i> 082 3966 22209
+                  </p>
+                  <p>
+                    <i class="fas fa-envelope mr-2"></i> DAFTAR ONLINE
+                    (https://pmb.ukjp.ac.id)
+                  </p>
+                </div>
+              </div>
+
+              <div class="md:w-1/2 p-8 text-gray-800">
+                <h3 class="text-2xl font-bold mb-6 text-accent">
+                  Formulir Pendaftaran Cepat
+                </h3>
+                <form>
+                  <div class="mb-4">
+                    <label class="block text-gray-700 mb-2" for="nama"
+                      >Nama Lengkap</label
+                    >
+                    <input
+                      type="text"
+                      id="nama"
+                      class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                    />
+                  </div>
+
+                  <div class="mb-4">
+                    <label class="block text-gray-700 mb-2" for="email"
+                      >Email</label
+                    >
+                    <input
+                      type="email"
+                      id="email"
+                      class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                    />
+                  </div>
+
+                  <div class="mb-4">
+                    <label class="block text-gray-700 mb-2" for="telp"
+                      >Nomor Telepon</label
+                    >
+                    <input
+                      type="tel"
+                      id="telp"
+                      class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                    />
+                  </div>
+
+                  <div class="mb-6">
+                    <label class="block text-gray-700 mb-2" for="gelombang"
+                      >Gelombang Pendaftaran</label
+                    >
+                    <select
+                      id="gelombang"
+                      class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                    >
+                      <option>Pilih Gelombang</option>
+                      <option>Gelombang 3: (1 Juli - 31 Agustus)</option>
+                      <option>Gelombang 4 (1 September - 30 September)</option>
+                    </select>
+                  </div>
+
+                  <button
+                    type="submit"
+                    class="w-full bg-secondary hover:bg-yellow-600 text-primary font-bold py-3 px-4 rounded-lg transition duration-300"
+                  >
+                    Kirim Pendaftaran
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Location -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-primary mb-4">
+            Kontak & Lokasi Kampus
+          </h2>
+          <p class="text-gray-600">
+            Kunjungi kami untuk informasi lebih lanjut
+          </p>
+          <div class="w-24 h-1 bg-secondary mx-auto mt-4"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12">
+          <div>
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+              <h3 class="text-xl font-bold text-accent mb-4">
+                Informasi Kontak
+              </h3>
+
+              <div class="space-y-4">
+                <div class="flex items-start">
+                  <div class="bg-primary text-white p-2 rounded-full mr-4">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-gray-800">Alamat Kampus</h4>
+                    <p class="text-gray-600">
+                      Jl. Dr. Ratulangi No. 172, Palopo (Kampus 1), Jl. Pemuda
+                      Raya No.7, Wara Selatan, Kota Palopo (Kampus 2)
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div class="bg-primary text-white p-2 rounded-full mr-4">
+                    <i class="fas fa-phone"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-gray-800">Telepon</h4>
+                    <p class="text-gray-600">082 3966 22209</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div class="bg-primary text-white p-2 rounded-full mr-4">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-gray-800">Email</h4>
+                    <p class="text-gray-600">info@ukjp.ac.id</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div class="bg-primary text-white p-2 rounded-full mr-4">
+                    <i class="fas fa-clock"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-gray-800">Jam Operasional</h4>
+                    <p class="text-gray-600">
+                      Senin - Jumat: 08.00 - 16.00 WIB
+                    </p>
+                    <p class="text-gray-600">Sabtu: 08.00 - 12.00 WIB</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-6 bg-gray-100 p-6 rounded-lg shadow-md">
+              <h3 class="text-xl font-bold text-accent mb-4">Media Sosial</h3>
+              <div class="flex space-x-4">
+                <a
+                  href="#"
+                  class="bg-primary text-white p-3 rounded-full hover:bg-accent transition duration-300"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a
+                  href="#"
+                  class="bg-primary text-white p-3 rounded-full hover:bg-accent transition duration-300"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a
+                  href="#"
+                  class="bg-primary text-white p-3 rounded-full hover:bg-accent transition duration-300"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a
+                  href="#"
+                  class="bg-primary text-white p-3 rounded-full hover:bg-accent transition duration-300"
+                >
+                  <i class="fab fa-youtube"></i>
+                </a>
+                <a
+                  href="#"
+                  class="bg-primary text-white p-3 rounded-full hover:bg-accent transition duration-300"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="h-96 bg-gray-200 rounded-lg overflow-hidden shadow-md">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2132.227531557782!2d120.2197075469725!3d-3.021307466160903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d915fb36c2142eb%3A0x1b35d8ccb67f9da0!2sFakultas%20Kedokteran%20Institut%20Kesehatan%20Dan%20Bisnis%20KJP!5e0!3m2!1sid!2sid!4v1753203292235!5m2!1sid!2sid"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+
+            <div class="mt-6 bg-gray-100 p-6 rounded-lg shadow-md">
+              <h3 class="text-xl font-bold text-accent mb-4">
+                Pertanyaan Umum
+              </h3>
+
+              <div class="space-y-4">
+                <div>
+                  <h4 class="font-bold text-gray-800">
+                    Apa keunggulan Prodi Bisnis Digital UKJP?
+                  </h4>
+                  <p class="text-gray-600 mt-1">
+                    Kurikulum berbasis industri, dosen berpengalaman, fasilitas
+                    modern, dan jaringan kerjasama dengan perusahaan digital.
+                  </p>
+                </div>
+
+                <div>
+                  <h4 class="font-bold text-gray-800">
+                    Apa prospek kerja lulusan Bisnis Digital?
+                  </h4>
+                  <p class="text-gray-600 mt-1">
+                    Digital marketer, e-commerce specialist, data analyst,
+                    business developer, startup founder, dan berbagai peluang di
+                    industri digital.
+                  </p>
+                </div>
+
+                <div>
+                  <h4 class="font-bold text-gray-800">
+                    Apakah ada beasiswa yang tersedia?
+                  </h4>
+                  <p class="text-gray-600 mt-1">
+                    Ya, tersedia berbagai jenis beasiswa yang di tawarkan yaitu
+                    : beasiswa KIP, beasiswa PPA (prestasi), beasiswa Pemerintah
+                    Daerah, beasiswa Hafizh Qur'an, beasiswa Yayasan.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-accent text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-4 gap-8">
+          <div>
+            <img
+              src="img/LOGO UNIVERSITAS.png"
+              alt="Logo UKJP"
+              class="h-20 mb-4"
+            />
+            <h3 class="text-xl font-bold mb-4">
+              Universitas Kurnia Jaya Persada
+            </h3>
+            <p class="text-gray-300">
+              Mencetak generasi digital yang kompeten, kreatif, dan berkarakter
+              untuk menghadapi tantangan bisnis di era digital.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-bold mb-4">Program Studi</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white"
+                  >Bisnis Digital</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white"
+                  >Sistem Informasi</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white"
+                  >Teknologi Informasi</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white">Manajemen</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white">Akuntansi</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-bold mb-4">Tautan Cepat</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white"
+                  >Penerimaan Mahasiswa Baru</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white"
+                  >Kalender Akademik</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white"
+                  >E-Learning</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white"
+                  >Perpustakaan Digital</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white">Alumni</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-bold mb-4">Newsletter</h3>
+            <p class="text-gray-300 mb-4">
+              Dapatkan informasi terbaru tentang Prodi Bisnis Digital langsung
+              ke email Anda.
+            </p>
+            <form class="flex">
+              <input
+                type="email"
+                placeholder="Email Anda"
+                class="px-4 py-2 rounded-l-lg focus:outline-none text-gray-800 w-full"
+              />
+              <button
+                type="submit"
+                class="bg-secondary text-primary px-4 py-2 rounded-r-lg font-bold hover:bg-yellow-600 transition duration-300"
+              >
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center"
+        >
+          <p class="text-gray-300 mb-4 md:mb-0">
+            © 2025 Universitas Kurnia Jaya Persada. All rights reserved.
+          </p>
+          <div class="flex space-x-6">
+            <a href="#" class="text-gray-300 hover:text-white"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="text-gray-300 hover:text-white"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" class="text-gray-300 hover:text-white"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" class="text-gray-300 hover:text-white"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="#" class="text-gray-300 hover:text-white"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a
+      href="#"
+      id="back-to-top"
+      class="fixed bottom-8 right-8 bg-primary text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script>
+      // Mobile Menu Toggle
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("active");
+      });
+
+      // Back to Top Button
+      const backToTopButton = document.getElementById("back-to-top");
+
+      window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 300) {
+          backToTopButton.classList.remove("opacity-0", "invisible");
+          backToTopButton.classList.add("opacity-100", "visible");
+        } else {
+          backToTopButton.classList.remove("opacity-100", "visible");
+          backToTopButton.classList.add("opacity-0", "invisible");
+        }
+      });
+
+      backToTopButton.addEventListener("click", (e) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
+  </body>
+</html>
